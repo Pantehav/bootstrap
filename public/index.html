@@ -12,130 +12,205 @@
 </head>
 <body>
 
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <!-- Overview on the left side -->
-            <span class="navbar-brand mb-0 h1">Overview</span>
-    
-            <!-- Space between elements -->
-            <div class="navbar-expand"></div>
-    
-            <!-- Search icon -->
-            <div class="d-flex align-items-center">
-                <button class="btn" type="button">
-                    <img src="assets/images/search.png" alt="Search" style="width: 20px; height: 20px;">
-                </button>
+  <!-- Side bar -->
+    <div class=" container text-center row col-4 d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 255px; height: 1234px;">
+  <!-- side bar content -->
+  <!-- Title -->
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="height: 608px; width: 255px;">
+        <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use>
+            </svg>
+            <span class="fs-4">Dashboard Kit</span>
+        </a>
+  <!-- The line between the title and main elements -->
+        <hr>
+  <!-- First 6 elements -->
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="#" class="nav-link active" aria-current="page">
+                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                  Overview
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                  Tickets
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                  Ideas
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                  Contacts
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                  Agents
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                  Articles
+                </a>
+              </li>
 
-                <!-- Notification Icon as an image -->
-                <button class="btn" type="button">
-                    <img src="assets/images/Notifications.png" alt="Notifications" style="width: 20px; height: 20px;">
-                </button>
-    
-                <!-- Vertical Divider -->
-                <div style="width: 1px; background-color: #DFE0EB; height: 30px; margin: 0 20px;"></div>
-    
-                <!-- User's Name -->
-                <span class="navbar-brand mb-0 ">Jones Ferdinand</span>
-    
-                <!-- Profile Picture -->
-                <img src="assets/images/profile.png" class="rounded-circle" alt="Profile" style="width: 40px; height: 40px;">
+            <!-- the line -->
+              <hr>
+
+            <!-- Last 2 elements -->
+            <li>
+                <a href="#" class="nav-link text-white">
+                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                  Settings
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link text-white">
+                  <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                  Subscription
+                </a>
+              </li>
+        </ul>
+    </div>
+    </div>
+
+
+    <div class="container" style=" width: 1185px; height: 1234px; left: 255px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 1122px; height: 44px; top: 30px; left: 285px;">
+      <div class="container-fluid">
+          <!-- Overview on the left side -->
+          <span class="navbar-brand mb-0 h1">Overview</span>
+  
+          <!-- Space between elements -->
+          <div class="navbar-expand"></div>
+  
+          <!-- Search icon -->
+          <div class="d-flex align-items-center">
+              <button class="btn" type="button">
+                  <img src="assets/images/search.png" alt="Search" style="width: 20px; height: 20px;">
+              </button>
+
+              <!-- Notification Icon as an image -->
+              <button class="btn" type="button">
+                  <img src="assets/images/Notifications.png" alt="Notifications" style="width: 20px; height: 20px;">
+              </button>
+  
+              <!-- Vertical Divider -->
+              <div style="width: 1px; background-color: #DFE0EB; height: 30px; margin: 0 20px;"></div>
+  
+              <!-- User's Name -->
+              <span class="navbar-brand mb-0 ">Jones Ferdinand</span>
+  
+              <!-- Profile Picture -->
+              <img src="assets/images/profile.png" class="rounded-circle" alt="Profile" style="width: 40px; height: 40px;">
+          </div>
+      </div>
+  </nav>
+
+
+  
+  <!--Number boxes (Unresolved, Overdue, Open, On Hold) -->
+  
+    <div class="row row-cols-1 row-cols-md-4 g-0" style="width: 1122px; height: 134px; top: 128px; left: 285px;">
+        <div class="col" style="width: 258px; height: 134px;">
+            <div class="card text-center card-custom">
+                <div class="card-body card-body-custom">
+                    <h5 class="card-title">Unresolved</h5>
+                    <p class="card-text fs-1 fw-bold">60</p>
+                </div>
             </div>
         </div>
-    </nav>
+        <div class="col" style="width: 258px; height: 134px; left: 288px;">
+            <div class="card text-center card-custom">
+                <div class="card-body card-body-custom">
+                    <h5 class="card-title">Overdue</h5>
+                    <p class="card-text fs-1 fw-bold">16</p>
+                </div>
+            </div>
+        </div>
+        <div class="col" style="width: 258px; height: 134px; left: 576px;">
+            <div class="card text-center card-custom">
+                <div class="card-body card-body-custom">
+                    <h5 class="card-title">Open</h5>
+                    <p class="card-text fs-1 fw-bold">43</p>
+                </div>
+            </div>
+        </div>
+        <div class="col" style="width: 258px; height: 134px; left: 864px;">
+            <div class="card text-center card-custom">
+                <div class="card-body card-body-custom">
+                    <h5 class="card-title">On Hold</h5>
+                    <p class="card-text fs-1 fw-bold">64</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-    
-    <!--Number boxes (Unresolved, Overdue, Open, On Hold) -->
-    
-      <div class="row row-cols-1 row-cols-md-4 g-0">
-          <div class="col">
-              <div class="card text-center card-custom">
-                  <div class="card-body card-body-custom">
-                      <h5 class="card-title">Unresolved</h5>
-                      <p class="card-text fs-1 fw-bold">60</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col">
-              <div class="card text-center card-custom">
-                  <div class="card-body card-body-custom">
-                      <h5 class="card-title">Overdue</h5>
-                      <p class="card-text fs-1 fw-bold">16</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col">
-              <div class="card text-center card-custom">
-                  <div class="card-body card-body-custom">
-                      <h5 class="card-title">Open</h5>
-                      <p class="card-text fs-1 fw-bold">43</p>
-                  </div>
-              </div>
-          </div>
-          <div class="col">
-              <div class="card text-center card-custom">
-                  <div class="card-body card-body-custom">
-                      <h5 class="card-title">On Hold</h5>
-                      <p class="card-text fs-1 fw-bold">64</p>
-                  </div>
-              </div>
-          </div>
-
-            <div class="position-absolute" style="width: 1122px; height: 546px; top: 292px; left: 285px; background-color: #f0f0f0; position: relative;">
-          
-              <!-- Title "Today's trends" on the right side -->
-              <div class="position-absolute" style="width: 400px; height: 24px; top: 32px; left: 32px;">
-                  <h2 style="
-                      font-family: Mulish;
-                      font-size: 19px;
-                      font-weight: 700;
-                      line-height: 24px;
-                      letter-spacing: 0.4000000059604645px;
-                      text-align: left;
-                      margin: 0;
-                      ">
-                      Today's trends
-                  </h2>
-              </div>
-
-              <div class="position-absolute" style="width: 400px; height: 16px; top: 64px; left: 32px;">
+    <div class="position-absolute" style="width: 1122px; height: 546px; top: 292px; left: 285px; background-color: #f0f0f0; position: relative;">
+        
+    <!-- Title "Today's trends" on the right side -->
+      <div class="position-absolute" style="width: 400px; height: 24px; top: 32px; left: 32px;">
                 <h2 style="
-                      font-family: Mulish;
-                      font-size: 12px;
-                      font-weight: 400;
-                      line-height: 16px;
-                      letter-spacing: 0.1px;
-                      text-align: left;
-                      margin: 0;
-                      ">
-                      as of 25 May 2019, 09:41 PM
-                  </h2>
-              </div>
+                    font-family: Mulish;
+                    font-size: 19px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    letter-spacing: 0.4000000059604645px;
+                    text-align: left;
+                    margin: 0;
+                    ">
+                    Today's trends
+                </h2>
+            </div>
 
-              <div class="position-absolute" style="width: 172px; height: 16px; top: 64px; left: 576px;">
-                  <nav style="--bs-breadcrumb-divider: ; color: #3751FF;" aria-label="breadcrumb">
-                    <ol class="breadcrumb width: 35px; height: 16px; top: 64px; left: 600px;">
-                      <li class="breadcrumb-item" style=" 
-                      font-family: Mulish;
-                      font-size: 12px;
-                      font-weight: 600;
-                      line-height: 15.06px;
-                      letter-spacing: 0.1px;
-                      text-align: left;
-                      margin: 0; "><a>Today</a></li>
-                    </ol>
-                  </nav>
-                  <ol class="breadcrumb width: 57px; height: 16px; top: 64px; left: 691px;">
-                    <li class="breadcrumb-item active" aria-current="page" style=" 
+            <div class="position-absolute" style="width: 400px; height: 16px; top: 64px; left: 32px;">
+              <h2 style="
+                    font-family: Mulish;
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    letter-spacing: 0.1px;
+                    text-align: left;
+                    margin: 0;
+                    ">
+                    as of 25 May 2019, 09:41 PM
+                </h2>
+            </div>
+
+            <div class="position-absolute" style="width: 172px; height: 16px; top: 64px; left: 576px;">
+                <nav style="--bs-breadcrumb-divider: ; color: #3751FF;" aria-label="breadcrumb">
+                  <ol class="breadcrumb width: 35px; height: 16px; top: 64px; left: 600px;">
+                    <li class="breadcrumb-item" style=" 
                     font-family: Mulish;
                     font-size: 12px;
                     font-weight: 600;
                     line-height: 15.06px;
                     letter-spacing: 0.1px;
                     text-align: left;
-                    margin: 0; ">Yesterday</li>
+                    margin: 0; "><a>Today</a></li>
                   </ol>
-                </div>
+                </nav>
+                <ol class="breadcrumb width: 57px; height: 16px; top: 64px; left: 691px;">
+                  <li class="breadcrumb-item active" aria-current="page" style=" 
+                  font-family: Mulish;
+                  font-size: 12px;
+                  font-weight: 600;
+                  line-height: 15.06px;
+                  letter-spacing: 0.1px;
+                  text-align: left;
+                  margin: 0; ">Yesterday</li>
+                </ol>
+              </div>
 
                 <!-- Graph Container -->
               <div class="position-absolute" style="width: 686px; height: 380px; top: 134px; left: 32px;">
@@ -505,6 +580,8 @@
        281
     </p>
         </div>
+      
+      
 
         
   <!-- Right Card -->
@@ -554,10 +631,10 @@
               padding: 5px 8px;
               border-radius: 5px;
           ">
-              View details
+              View all
           </p>
 
-          <!-- Waiting on Feature Request -->
+          <!-- Create new task -->
           <div class="custom-section" style="width: 546px; height: 58px; position: absolute; top: 96px; left:0px;">
             <p style="
       width: 378px;
@@ -571,11 +648,11 @@
       line-height: 20px;
       letter-spacing: 0.2px;
       text-align: left;
-      color:  #252733;
+      color:  #C5C7CD;
       padding: 5px;
       border-radius: 5px;
   ">
-      Waiting on Feature Request
+      Create new task
   </p>
   <p style="
       width: 80px;
@@ -589,13 +666,11 @@
       line-height: 20px;
       letter-spacing: 0.2px;
       text-align: right;
-      color: #9FA2B4;
   ">
-      4238
   </p>
         </div>
         
-        <!-- Awaiting Customer Response -->
+        <!-- Finish ticket update -->
         <div class="custom-section" style="width: 546px; height: 58px; position: absolute; top: 154px; left:0px; border: 1px solid #9FA2B4;">
           <p style="
       width: 378px;
@@ -611,7 +686,7 @@
       text-align: left;
       color: #252733;
   ">
-      Awaiting Customer Response
+      Finish ticket update
   </p>
   <p style="
       width: 80px;
@@ -625,13 +700,14 @@
       line-height: 20px;
       letter-spacing: 0.2px;
       text-align: right;
-      color: #9FA2B4;
+      color: white;
+      background-color: #FEC400;
   ">
-      1005
+      URGENT
   </p>
       </div>
 
-      <!-- Awaiting Developer Fix -->
+      <!-- Create new ticket example -->
       <div class="custom-section" style="width: 546px; height: 58px; position: absolute; top: 212px; left:0px; border: 1px solid #9FA2B4;">
         <p style="
       width: 378px;
@@ -647,7 +723,7 @@
       text-align: left;
       color: #252733;
   ">
-      Awaiting Developer Fix
+      Create new ticket example
   </p>
   <p style="
       width: 80px;
@@ -661,13 +737,14 @@
       line-height: 20px;
       letter-spacing: 0.2px;
       text-align: right;
-      color: #9FA2B4;
+      color:white;
+      background-color: #29CC97;
   ">
-     914
+     NEW
   </p>
       </div>
 
-      <!-- Pending -->
+      <!-- Update ticket report -->
       <div class="custom-section" style="width: 546px; height: 58px; position: absolute; top: 270px; left:0px; ">
         <p style="
       width: 378px;
@@ -683,7 +760,7 @@
       text-align: left;
       color: #252733;
   ">
-      Pending
+      Update ticket report
   </p>
   <p style="
       width: 80px;
@@ -698,121 +775,17 @@
       letter-spacing: 0.2px;
       text-align: right;
       color: #9FA2B4;
+      background-color: #F0F1F7;
   ">
-     281
+  DEFAULT
   </p>
-
-
-      
       </div>
-  </div>
-  </div>
-
-        
-        </div>
-
-
-        
+      </div>
     </div>
-    </div>
-
-    
-    
-    
-
-
-              
-      <!-- Side bar -->
-      <div class=" container text-center row col-4 d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px; height: 1234px;">
-        
-
-        <!-- side bar content -->
-
-        <!-- Title -->
-        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="height: 608px;">
-            <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use>
-                </svg>
-                <span class="fs-4">Dashboard Kit</span>
-            </a>
-
-
-        <!-- The line between the title and main elements -->
-            <hr>
-
-            <!-- First 6 elements -->
-            <ul class="nav nav-pills flex-column mb-auto">
-                <li class="nav-item">
-                    <a href="#" class="nav-link active" aria-current="page">
-                      <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-                      Overview
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                      Tickets
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                      Ideas
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                      Contacts
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                      Agents
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                      Articles
-                    </a>
-                  </li>
-
-                <!-- the line -->
-                  <hr>
-
-                <!-- Last 2 elements -->
-                <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                      Settings
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link text-white">
-                      <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                      Subscription
-                    </a>
-                  </li>
-            </ul>
         </div>
-        
-
-    
-        
-
-        
-        
+      </div>
 
       
-
-        
-    
-
-        <!-- Gap between side bar and main content -->
-        <div class="b-example-divider b-example-vr"></div>
-        
 
         
        
